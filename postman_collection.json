@@ -1,0 +1,1009 @@
+{
+	"info": {
+		"_postman_id": "d4e5f3e7-d60f-457f-a896-b72a1b40d8fd",
+		"name": "Hajans Test Case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "List all products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/products",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"count\": 62,\n    \"data\": [\n        {\n            \"id\": 44,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 45,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 46,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 47,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red1\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 48,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 49,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 50,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 51,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 52,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 53,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 54,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 55,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 56,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 57,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 58,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 59,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 60,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 61,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 62,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 63,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 64,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 65,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 66,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 67,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 68,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 69,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 70,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 71,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 72,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 73,\n            \"name\": \"1\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 74,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 75,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 76,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 77,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 78,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 79,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 80,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 81,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 82,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 83,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 84,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 85,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 86,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 87,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 88,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 89,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 90,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 91,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 92,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 93,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 94,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 95,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 96,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 97,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 98,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 99,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 100,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 101,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 102,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 103,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 0\n        },\n        {\n            \"id\": 104,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 105,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"123.00\",\n            \"stock\": 551\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/products?name=test&description=test&color=test&image_url=test&size=test&weight=test&category=test&category_id=1&stock=1&stock_status=in_stock",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test"
+								},
+								{
+									"key": "description",
+									"value": "test"
+								},
+								{
+									"key": "color",
+									"value": "test"
+								},
+								{
+									"key": "image_url",
+									"value": "test"
+								},
+								{
+									"key": "size",
+									"value": "test"
+								},
+								{
+									"key": "weight",
+									"value": "test"
+								},
+								{
+									"key": "category",
+									"value": "test"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "stock",
+									"value": "1"
+								},
+								{
+									"key": "stock_status",
+									"value": "in_stock",
+									"description": "Can be used: in_stock, out_of_stock, low_stock"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/products?name=test&stock_status=in_stock",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "test"
+										},
+										{
+											"key": "description",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "color",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "image_url",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "size",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "weight",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "category",
+											"value": "test",
+											"disabled": true
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "stock",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "stock_status",
+											"value": "in_stock",
+											"description": "Can be used: in_stock, out_of_stock, low_stock"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 22 Apr 2023 16:05:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"count\": 30,\n    \"data\": [\n        {\n            \"id\": 74,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 75,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 76,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 77,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 78,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 80,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 81,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 82,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 83,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 84,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 85,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 86,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 87,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 88,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 89,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 90,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 91,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 92,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 93,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 94,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 95,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 96,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 97,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 98,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 99,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 104,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"1.00\",\n            \"stock\": 2\n        },\n        {\n            \"id\": 105,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"123.00\",\n            \"stock\": 551\n        },\n        {\n            \"id\": 106,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"123.00\",\n            \"stock\": 551\n        },\n        {\n            \"id\": 108,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"123.00\",\n            \"stock\": 551\n        },\n        {\n            \"id\": 109,\n            \"name\": \"test\",\n            \"description\": \"1\",\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Default\"\n            },\n            \"price\": \"1.5000\",\n            \"image_url\": null,\n            \"color\": \"red11\",\n            \"size\": \"1\",\n            \"weight\": \"123.00\",\n            \"stock\": 551\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"description": "Must be exist in categories",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1.5",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "red11",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "stock_count",
+									"value": "551",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"description": "Must be exist in categories",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "1.5",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "red11",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "weight",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "stock_count",
+											"value": "551",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/products",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 108,\n        \"name\": \"test\",\n        \"description\": \"1\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Default\"\n        },\n        \"price\": \"1.5000\",\n        \"image_url\": null,\n        \"color\": \"red11\",\n        \"size\": \"1\",\n        \"weight\": \"123.00\",\n        \"stock\": 551\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"description": "Must be exist in categories",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1.5",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "red11",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "stock_count",
+									"value": "551",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"description": "Must be exist in categories",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "1.5",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "red11",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "weight",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "stock_count",
+											"value": "551",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/products/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"description": "Must be exist in categories",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1.5",
+									"type": "text"
+								},
+								{
+									"key": "color",
+									"value": "red11",
+									"type": "text"
+								},
+								{
+									"key": "size",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "stock_count",
+									"value": "551",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"description": "Must be exist in categories",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "1.5",
+											"type": "text"
+										},
+										{
+											"key": "color",
+											"value": "red11",
+											"type": "text"
+										},
+										{
+											"key": "size",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "weight",
+											"value": "123",
+											"type": "text"
+										},
+										{
+											"key": "stock_count",
+											"value": "551",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/products/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 107,\n        \"name\": \"test\",\n        \"description\": \"1\",\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Default\"\n        },\n        \"price\": \"1.5000\",\n        \"image_url\": null,\n        \"color\": \"red11\",\n        \"size\": \"1\",\n        \"weight\": \"123.00\",\n        \"stock\": 551\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "Create category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "test",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "test",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/categories",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 5,\n        \"name\": \"test\",\n        \"description\": \"test\",\n        \"products\": []\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "test1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/categories/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "test1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/categories/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"test\",\n        \"description\": \"test1\",\n        \"products\": []\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "test1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/categories/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "test",
+											"type": "default"
+										},
+										{
+											"key": "description",
+											"value": "test1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{BASE_URL}}/api/categories/:id",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"categories",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 22 Apr 2023 16:03:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.54 (Win64) OpenSSL/1.1.1p PHP/8.1.10"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.10"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "List all categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/categories",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/api/categories",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Default\",\n        \"description\": \"\",\n        \"products\": [\n            {\n                \"id\": 44,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 45,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 46,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 47,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red1\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 48,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 49,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 50,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 51,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 52,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 53,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 54,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 55,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 56,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 57,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 58,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 59,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 60,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 61,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 62,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 63,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 64,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 65,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 66,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 67,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 68,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 69,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 70,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 71,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 72,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 73,\n                \"name\": \"1\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 74,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 75,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 76,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 77,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 78,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 79,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 80,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 81,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 82,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 83,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 84,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 85,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 86,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 87,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 88,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 89,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 90,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 91,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 92,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 93,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 94,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 95,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 96,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 97,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 98,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 99,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 100,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 101,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 102,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 103,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 0\n            },\n            {\n                \"id\": 104,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"1.00\",\n                \"stock\": 2\n            },\n            {\n                \"id\": 105,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"123.00\",\n                \"stock\": 551\n            },\n            {\n                \"id\": 106,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"123.00\",\n                \"stock\": 551\n            },\n            {\n                \"id\": 108,\n                \"name\": \"test\",\n                \"description\": \"1\",\n                \"category\": {\n                    \"id\": 1,\n                    \"name\": \"Default\"\n                },\n                \"price\": \"1.5000\",\n                \"image_url\": null,\n                \"color\": \"red11\",\n                \"size\": \"1\",\n                \"weight\": \"123.00\",\n                \"stock\": 551\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{API_KEY}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_KEY",
+			"value": "test",
+			"type": "default"
+		},
+		{
+			"key": "BASE_URL",
+			"value": "http://hajans-test-case.ad",
+			"type": "default"
+		}
+	]
+}

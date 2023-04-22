@@ -1,0 +1,22 @@
+{
+    "name": "muharrem-yildirim/hajans-test-case",
+    "autoload": {
+        "psr-4": {
+            "MuharremYildirim\\HajansTestCase\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muharrem Yıldırım",
+            "email": "muharremyildirim303@gmail.com"
+        }
+    ],
+    "require": {
+        "larapack/dd": "^1.1",
+        "izniburak/router": "^2.5",
+        "vlucas/phpdotenv": "^5.5",
+        "php-di/php-di": "^7.0",
+        "rakit/validation": "^1.4",
+        "monolog/monolog": "^3.3"
+    }
+}
