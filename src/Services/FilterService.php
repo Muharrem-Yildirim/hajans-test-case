@@ -2,9 +2,18 @@
 
 namespace MuharremYildirim\HajansTestCase\Services;
 
+use MuharremYildirim\HajansTestCase\Core\Model;
+
 class FilterService
 {
-    public function generateFilter($model, $params)
+    /**
+     * generateFilter
+     *
+     * @param  Model $model
+     * @param  array $params
+     * @return array
+     */
+    public function generateFilter(Model $model, array $params): array
     {
         $filter = [];
 

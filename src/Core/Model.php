@@ -12,15 +12,29 @@ class Model extends MySQL
     protected $query = null;
     protected $primaryKey = 'id';
     protected $fillable = [];
+    protected $includedRelations = [];
 
-    public function query($sql, $params = [])
+    /**
+     * query
+     *
+     * @param  string $sql
+     * @param  array $params
+     * @return PDOStatement|false
+     */
+    public function query($sql, $params = []): \PDOStatement|false
     {
         $statment = $this->connection->prepare($sql);
         $statment->execute($params);
         return $statment;
     }
 
-    public function first($id)
+    /**
+     * first
+     *
+     * @param  int $id
+     * @return Model|null
+     */
+    public function first(int $id): Model|null
     {
         $statment = $this->query(sprintf(
             '%s WHERE `%s`.`%s` = :id',
@@ -29,11 +43,24 @@ class Model extends MySQL
             $this->primaryKey
         ), ['id' => $id]);
 
-        $model = (new static())->setPrimaryKey($id)->fill($statment->fetch());
+        $result = $statment->fetch();
+
+        if ($result == false) {
+            return null;
+        }
+
+        $model = (new static())->setPrimaryKey($id)->fill($result);
+
         return $model;
     }
 
-    public function all($filter = [])
+    /**
+     * all
+     *
+     * @param  array $filter
+     * @return array
+     */
+    public function all(array $filter = []): array
     {
         $keys =  array_keys($filter);
         $sql = $this->query;
@@ -46,16 +73,22 @@ class Model extends MySQL
 
         $statment = $this->query($sql);
 
-        $products = [];
+        $models = [];
 
-        foreach ($statment->fetchAll() as $product) {
-            $products[] = (new static())->setPrimaryKey($product['id'])->fill($product)->toArray();
+        foreach ($statment->fetchAll() as $model) {
+            $models[] = (new static())->setPrimaryKey($model[$this->primaryKey])->fill($model)
+                ->includeRelations($this->includedRelations)->toArray();
         }
 
-        return $products;
+        return $models;
     }
 
-    public function save()
+    /**
+     * save
+     *
+     * @return Model|null
+     */
+    public function save(): Model|null
     {
         if (property_exists($this, $this->primaryKey) && !empty($this->{$this->primaryKey})) {
             return self::update();
@@ -80,7 +113,12 @@ class Model extends MySQL
         return $this;
     }
 
-    public function update()
+    /**
+     * update
+     *
+     * @return Model|null
+     */
+    public function update(): Model|null
     {
         $keys =  array_keys($this->getFillables());
         $values = array_values($this->getFillables());
@@ -102,7 +140,13 @@ class Model extends MySQL
         return $this;
     }
 
-    public function delete($id)
+    /**
+     * delete
+     *
+     * @param  int $id
+     * @return int
+     */
+    public function delete(int $id): int
     {
         $sql = sprintf(
             'DELETE FROM %s WHERE `%s`.`%s` = :id',
@@ -117,13 +161,67 @@ class Model extends MySQL
         return $statment->rowCount();
     }
 
-    public function reload()
+    /**
+     * exists
+     *
+     * @return bool
+     */
+    public function exists(): bool
+    {
+        return $this->first($this->{$this->primaryKey}) != null;
+    }
+
+    /**
+     * reload
+     *
+     * @return Model|null
+     */
+    public function reload(): Model|null
     {
         return $this->first($this->getPrimaryKey());
     }
 
-    public function toArray()
+    /**
+     * toArray
+     *
+     * @return Model|array
+     */
+    public function toArray(): Model|array
     {
         return $this;
+    }
+
+    /**
+     * filterables
+     *
+     * @return array
+     */
+    public function filterables(): array
+    {
+        return [];
+    }
+
+    /**
+     * includeRelations
+     *
+     * @param  array $relations
+     * @return Model|null
+     */
+    public function includeRelations(array $relations): Model|null
+    {
+        $this->includedRelations = array_merge($this->includedRelations, $relations);
+
+        return $this;
+    }
+
+    /**
+     * isRelationExist
+     *
+     * @param  string $relation
+     * @return bool
+     */
+    public function isRelationExist(string $relation): bool
+    {
+        return in_array($relation, $this->includedRelations);
     }
 }

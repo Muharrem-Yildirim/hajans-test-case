@@ -20,7 +20,12 @@ class Stock extends Model
         'stock_count'
     ];
 
-    public function save()
+    /**
+     * save
+     *
+     * @return Model|null
+     */
+    public function save(): Model|null
     {
         $this->query(
             'INSERT INTO stocks (product_id, stock_count) VALUES (:product_id, :stock_count) 
@@ -30,5 +35,7 @@ class Stock extends Model
                 'stock_count' => empty($this->stock_count) ? 0 : $this->stock_count
             ]
         );
+
+        return $this;
     }
 }

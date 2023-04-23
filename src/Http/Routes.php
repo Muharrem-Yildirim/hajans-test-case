@@ -2,7 +2,6 @@
 
 namespace MuharremYildirim\HajansTestCase\Http;
 
-use Exception;
 use Throwable;
 use Buki\Router\Router;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,7 +14,12 @@ use MuharremYildirim\HajansTestCase\Http\Controllers\Api\CategoryController;
 
 class Routes
 {
-    public function initRoutes()
+    /**
+     * initRoutes
+     *
+     * @return void
+     */
+    public function initRoutes(): void
     {
         $router = new Router(
             [

@@ -17,12 +17,22 @@ class Setup extends MySQL
         $this->importSql();
     }
 
-    public static function isCli()
+    /**
+     * isCli
+     *
+     * @return bool
+     */
+    public static function isCli(): bool
     {
         return php_sapi_name() === 'cli';
     }
 
-    public function importSql()
+    /**
+     * importSql
+     *
+     * @return void
+     */
+    public function importSql(): void
     {
         $sql = file_get_contents(__DIR__ . '/schema.sql');
         $this->connection->exec($sql);

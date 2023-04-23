@@ -4,14 +4,19 @@ namespace MuharremYildirim\HajansTestCase\Core;
 
 class MySQL
 {
-    protected $connection = null;
+    protected \PDO $connection;
 
     public function __construct()
     {
         $this->connection = $this->connect();
     }
 
-    public function connect()
+    /**
+     * connect
+     *
+     * @return PDO
+     */
+    public function connect(): \PDO
     {
         $db = new \PDO(config('db_connection_string'), config('db_username'), config('db_password'));
         $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);

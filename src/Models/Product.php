@@ -164,7 +164,12 @@ class Product extends Model
         ];
     }
 
-    public function toArray()
+    /**
+     * toArray
+     *
+     * @return array
+     */
+    public function toArray(): array
     {
         return [
             'id' => $this->id,

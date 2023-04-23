@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use MuharremYildirim\HajansTestCase\Core\Container;
 use MuharremYildirim\HajansTestCase\Core\Logger;
-use MuharremYildirim\HajansTestCase\Models\Product;
 use MuharremYildirim\HajansTestCase\Models\Category;
 use MuharremYildirim\HajansTestCase\Http\Middlewares\BasicAuthenticationMiddleware;
 
@@ -28,10 +27,25 @@ class CategoryController
         $this->logger = Container::instance()->get(Logger::class);
     }
 
-    public function index()
+    /**
+     * index
+     *
+     * @return JsonResponse
+     */
+    public function index(Request $request): JsonResponse
     {
         try {
-            return $this->category->all();
+            if ($request->query->get('includeProducts', false) == 'true') {
+                $categories = $this->category->includeRelations(['products'])->all();
+            } else {
+                $categories = $this->category->all();
+            }
+
+            return new JsonResponse([
+                'success' => true,
+                'count' => count($categories),
+                'data' => $categories
+            ]);
         } catch (\Throwable $e) {
             $this->logger->get()->error($e);
 
@@ -42,7 +56,13 @@ class CategoryController
         }
     }
 
-    public function show($id)
+    /**
+     * show
+     *
+     * @param  int $id
+     * @return JsonResponse
+     */
+    public function show(int $id): JsonResponse
     {
         try {
             $category = $this->category->first($id);
@@ -68,7 +88,13 @@ class CategoryController
         }
     }
 
-    public function delete($id)
+    /**
+     * delete
+     *
+     * @param  int $id
+     * @return JsonResponse
+     */
+    public function delete(int $id): JsonResponse
     {
         try {
             $affectedRows = $this->category->delete($id);
@@ -93,7 +119,13 @@ class CategoryController
         }
     }
 
-    public function post(Request $request)
+    /**
+     * post
+     *
+     * @param  Request $request
+     * @return JsonResponse
+     */
+    public function post(Request $request): JsonResponse
     {
         try {
             $validation = $this->validator->make($request->request->all(), [
@@ -128,7 +160,14 @@ class CategoryController
         }
     }
 
-    public function put($id, Request $request)
+    /**
+     * put
+     *
+     * @param  int $id
+     * @param  Request $request
+     * @return JsonResponse
+     */
+    public function put(int $id, Request $request): JsonResponse
     {
         try {
             $validation = $this->validator->make($request->request->all(), [
@@ -146,14 +185,14 @@ class CategoryController
                 ], 422);
             }
 
-            $model = (new Category())->setPrimaryKey($id)->fill(unsetNulls($validation->getValidData()))->update();
-
-            if (is_null($model)) {
+            if (!$this->category->setPrimaryKey($id)->exists()) {
                 return new JsonResponse([
                     'error' => true,
                     'message' => 'Category not found.'
                 ], 404);
             }
+
+            $model = (new Category())->setPrimaryKey($id)->fill(unsetNulls($validation->getValidData()))->update();
 
             return new JsonResponse([
                 'success' => true,

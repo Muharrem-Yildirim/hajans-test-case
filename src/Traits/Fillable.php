@@ -2,8 +2,6 @@
 
 namespace MuharremYildirim\HajansTestCase\Traits;
 
-use Exception;
-
 trait Fillable
 {
     /**

@@ -2,7 +2,6 @@
 
 namespace MuharremYildirim\HajansTestCase\Http\Controllers\Api;
 
-use Exception;
 use Rakit\Validation\Validator;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -34,7 +33,13 @@ class ProductController
         $this->logger = Container::instance()->get(Logger::class);
     }
 
-    public function index(Request $request)
+    /**
+     * index
+     *
+     * @param  Request $request
+     * @return JsonResponse
+     */
+    public function index(Request $request): JsonResponse
     {
         try {
             $filter = $this->filterService->generateFilter($this->product, $request->query->all());
@@ -57,10 +62,15 @@ class ProductController
         }
     }
 
-    public function show($id)
+    /**
+     * show
+     *
+     * @param  int $id
+     * @return JsonResponse
+     */
+    public function show(int $id): JsonResponse
     {
         try {
-
             $product = $this->product->first($id);
 
             if (empty($product)) {
@@ -84,7 +94,13 @@ class ProductController
         }
     }
 
-    public function delete($id)
+    /**
+     * delete
+     *
+     * @param  int $id
+     * @return JsonResponse
+     */
+    public function delete(int $id): JsonResponse
     {
         try {
             $affectedRows = $this->product->delete($id);
@@ -109,7 +125,13 @@ class ProductController
         }
     }
 
-    public function post(Request $request)
+    /**
+     * post
+     *
+     * @param  Request $request
+     * @return JsonResponse
+     */
+    public function post(Request $request): JsonResponse
     {
         try {
             $validation = $this->validator->make($request->request->all(), [
@@ -154,7 +176,14 @@ class ProductController
         }
     }
 
-    public function put($id, Request $request)
+    /**
+     * put
+     *
+     * @param  int $id
+     * @param  Request $request
+     * @return JsonResponse
+     */
+    public function put(int $id, Request $request): JsonResponse
     {
         try {
             $validation = $this->validator->make($request->request->all(), [
@@ -183,14 +212,14 @@ class ProductController
                 ], 422);
             }
 
-            $model = (new Product())->setPrimaryKey($id)->fill(unsetNulls($validation->getValidData()))->update();
-
-            if (is_null($model)) {
+            if (!$this->product->setPrimaryKey($id)->exists()) {
                 return new JsonResponse([
                     'error' => true,
                     'message' => 'Product not found.'
                 ], 404);
             }
+
+            $model = (new Product())->setPrimaryKey($id)->fill(unsetNulls($validation->getValidData()))->update();
 
             return new JsonResponse([
                 'success' => true,

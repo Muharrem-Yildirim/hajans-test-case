@@ -31,18 +31,28 @@ class Category extends Model
         $this->filterService = Container::instance()->get(FilterService::class);
     }
 
-    public function toArray()
+    /**
+     * toArray
+     *
+     * @return array
+     */
+    public function toArray(): array
     {
-        return [
+        $data = [
             'id' => $this->id,
             'name' => $this->name,
-            'description' => $this->description,
-            'products' => $this->product->all(
+            'description' => $this->description
+        ];
+
+        if ($this->isRelationExist('products')) {
+            $data['products'] = $this->product->all(
                 $this->filterService->generateFilter(
                     $this->product,
                     ['category_id' => $this->id]
                 )
-            ),
-        ];
+            );
+        }
+
+        return $data;
     }
 }

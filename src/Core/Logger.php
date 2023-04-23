@@ -10,7 +10,12 @@ class Logger
 {
     private MonologLogger $logger;
 
-    public function get()
+    /**
+     * get
+     *
+     * @return MonologLogger
+     */
+    public function get(): MonologLogger
     {
         if (isset($this->logger)) {
             return $this->logger;
